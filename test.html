@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .contenedor {
+        display: flex;
+        width: 100%;
+        min-height: 100vh;
+      }
+
+      aside.aside1 {
+        background-color: red;
+        flex: 1;
+        flex-grow: 1;
+        min-width: 22%;
+      }
+
+      main {
+        background-color: blue;
+        flex: 1;
+        flex-grow: 5;
+        min-width: 55%;
+      }
+
+      aside.aside2 {
+        background-color: green;
+        flex: 1;
+        flex-grow: 2;
+        min-width: 25%;
+      }
+
+      nav {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      .enlacesCOntainer ul {
+        display: flex;
+        justify-content: space-around;
+        gap: 40px;
+      }
+    </style>
+  </head>
+  <div class="container">
+    <!-- seccion del header,  -->
+    <header>
+      <nav>
+        <div
+          style="
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            gap: 20px;
+          "
+        >
+          <h1>logo</h1>
+          <input type="text" placeholder="buscar" />
+        </div>
+        <div class="enlacesCOntainer">
+          <ul>
+            <li><a href="">hola</a></li>
+            <li><a href="">hola</a></li>
+            <li><a href="">hola</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <!-- seccion del header,  -->
+
+    <div class="contenedor">
+      <aside class="aside1"></aside>
+      <!-- seccion principal -->
+      <main></main>
+      <!-- seccion principal -->
+      <aside class="aside2"></aside>
+    </div>
+  </div>
+</html>
